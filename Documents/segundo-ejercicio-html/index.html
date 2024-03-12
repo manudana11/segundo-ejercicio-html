@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>El club viejuner</h2>
+    <form>
+        <fieldset>
+            <legend>Tú</legend>
+            <label for="fname">Nombre: </label>
+            <input type="text" id="fname" name="fname" placeholder="Nombre"><br><br>
+            <label for="fsurname">Apellido: </label>
+            <input type="text" id="fsurname" name="fsurname"><br><br>
+            <label for="age">Edad: </label>
+            <input type="number" id="age" name="age"><br><br>
+            <label for="sex">Sexo: </label>
+            <input type="radio" id="hombre" name="sex" value="Hombre">
+            <label for="hombre">Hombre</label>
+            <input type="radio" name="sex" id="mujer">
+            <label for="mujer">Mujer</label><br><br>
+            <input type="checkbox" name="viejuner" id="viejuner">
+            <label for="viejuner">Me sento viejuner</label><br><br>
+            <label for="aboutyou">Escribe algo sobre ti: </label><br>
+            <textarea name="aboutyou" id="aboutyou" cols="30" rows="10">Escribe aquí sobre ti...</textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Tus circunstancias</legend>
+            <label for="activitydate">Fecha: </label>
+            <input type="date" name="activitydate" id="activitydate"><br><br>
+            <label for="activityhour">Hora: </label>
+            <input type="time" name="activityhour" id="activityhour"><br><br>
+            <label for="colorbici">Color de la bicicleta: </label>
+            <input type="color" name="colorbici" id="colorbici"><br><br>
+            <label for="price">Rango de precio (entre 0€ y 1000€): </label>
+            <input type="range" name="price" id="price" min="0" max="1000"><br><br>
+            <label for="bicicletype">Tipo de bicicleta: </label>
+            <select name="bicicletype" id="bicicletype">
+                <optgroup label="Paseo">
+                    <option value="señorial">Señorial</option>
+                    <option value="antiplebeyos">Anti-plebeyos</option>
+                    <option value="porencimadelhombro">PorEncimaDelHombro</option>
+                </optgroup>
+                <optgroup label="Montaña">
+                    <option value="gamusinos">Gamusinos</option>
+                    <option value="hueleflores">Hueleflores premium</option>
+                    <option value="fango">Fango lover</option>
+                </optgroup>
+                <optgroup label="Carreras">
+                    <option value="metroymedio">Metroymedio</option>
+                    <option value="fluoresecente">3 de la tarde. Fluorescente edition</option>
+                    <option value="grupitors">Grupitors</option>
+                </optgroup>
+            </select><br><br>
+            <label for="accesorios">Accesorios: </label>
+            <select multiple name="accesorios" id="accesorios">
+                <option value="ruedines">Ruedines</option>
+                <option value="pegatinas">Pegatinas</option>
+                <option value="cesta">Cesta</option>
+                <option value="bombaaire">Bomba de aire</option>
+                <option value="timbre">Timbre</option>
+                <option value="foco">Foco</option>
+            </select><br><br>
+            <label for="brand">¿Que marca era?</label>
+            <input list="brands" name="brand" id="brand">
+            <datalist id="brands">
+                <option value="specialized"></option>
+                <option value="trek"></option>
+                <option value="merida"></option>
+                <option value="scott"></option>
+                <option value="giant"></option>
+                <option value="cube"></option>
+                <option value="lapierre"></option>
+                <option value="orbea"></option>
+                <option value="cannondale"></option>
+                <option value="bmc"></option>
+                <option value="canyon"></option>
+                <option value="look"></option>
+                <option value="protek"></option>
+                <option value="megamo"></option>
+                <option value="pinarello"></option>
+                <option value="bianchi"></option>
+                <option value="bh"></option>
+                <option value="factor"></option>
+                <option value="ghost"></option>
+                <option value="cervelo"></option>
+                <option value="argon"></option>
+            </datalist>
+        </fieldset>
+    </form>
+</body>
+</html>
