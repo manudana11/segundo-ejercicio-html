@@ -11,11 +11,11 @@
         <fieldset>
             <legend>Tú</legend>
             <label for="fname">Nombre: </label>
-            <input type="text" id="fname" name="fname" placeholder="Nombre"><br><br>
+            <input type="text" id="fname" name="fname" placeholder="Pedro" autofocus tabindex="1"><br><br>
             <label for="fsurname">Apellido: </label>
-            <input type="text" id="fsurname" name="fsurname"><br><br>
+            <input type="text" id="fsurname" name="fsurname" placeholder="Picapiedra"><br><br>
             <label for="age">Edad: </label>
-            <input type="number" id="age" name="age"><br><br>
+            <input type="number" id="age" name="age" placeholder="64"><br><br>
             <label for="sex">Sexo: </label>
             <input type="radio" id="hombre" name="sex" value="Hombre">
             <label for="hombre">Hombre</label>
@@ -24,7 +24,7 @@
             <input type="checkbox" name="viejuner" id="viejuner">
             <label for="viejuner">Me sento viejuner</label><br><br>
             <label for="aboutyou">Escribe algo sobre ti: </label><br>
-            <textarea name="aboutyou" id="aboutyou" cols="30" rows="10">Escribe aquí sobre ti...</textarea>
+            <textarea name="aboutyou" id="aboutyou" cols="30" rows="10" tabindex="2" placeholder="Escribe aquí sobre ti..."></textarea>
         </fieldset>
         <fieldset>
             <legend>Tus circunstancias</legend>
@@ -33,7 +33,7 @@
             <label for="activityhour">Hora: </label>
             <input type="time" name="activityhour" id="activityhour"><br><br>
             <label for="colorbici">Color de la bicicleta: </label>
-            <input type="color" name="colorbici" id="colorbici"><br><br>
+            <input type="color" name="colorbici" id="colorbici" value="#FFFFFF"><br><br>
             <label for="price">Rango de precio (entre 0€ y 1000€): </label>
             <input type="range" name="price" id="price" min="0" max="1000"><br><br>
             <label for="bicicletype">Tipo de bicicleta: </label>
@@ -88,7 +88,9 @@
                 <option value="cervelo"></option>
                 <option value="argon"></option>
             </datalist>
-        </fieldset>
+        </fieldset><br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit" tabindex="3">
     </form>
 </body>
 </html>
